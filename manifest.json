@@ -1,18 +1,20 @@
 {
-  "name": "PWA Example",
-  "short_name": "PWA",
-  "start_url": "/index.html",
+  "name": "Tentang Fauzan",
+  "short_name": "Fauzan",
+  "start_url": "/about.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "background_color": "#f2f2f2",
+  "theme_color": "#667eea",
+  "orientation": "portrait-primary",
+  "description": "Halaman pribadi Fauzan sebagai tugas PWA.",
   "icons": [
     {
-      "src": "/images/icons/icon-192x192.png",
+      "src": "/images/icon-192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/images/icons/icon-512x512.png",
+      "src": "/images/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

@@ -3,40 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tentang Saya - Ojan</title>
+    <title>Tentang Saya - Muhammad Fauzan Ashshidiq</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
   </head>
+
   <body>
-    <h1>Tentang Saya</h1>
+    <div class="container">
+      <img src="/images/profile.png" alt="Foto Profil" class="profile" />
 
-    <div class="card">
-      <img
-        src="https://via.placeholder.com/120"
-        alt="Foto Profil"
-        class="profile"
-      />
+      <h1>Muhammad Fauzan Ashshidiq</h1>
+      <p class="subtitle">Full-Stack Developer</p>
 
-      <h2>Muhammad Fauzan (Ojan)</h2>
-      <p>
-        Saya adalah seorang mahasiswa yang tertarik di bidang teknologi,
-        khususnya pengembangan aplikasi mobile, backend Laravel, serta Internet
-        of Things (IoT).
+      <p class="intro">
+        Halo! Saya Fauzan, seorang mahasiswa yang tertarik di bidang teknologi.
+        Halaman ini dibuat sebagai bagian dari tugas PWA, untuk menampilkan
+        informasi sederhana tentang saya.
       </p>
 
-      <p>Beberapa hal yang saya pelajari:</p>
-      <ul>
-        <li>Android Development (Kotlin)</li>
-        <li>Laravel Web Development</li>
-        <li>Progressive Web App (PWA)</li>
-        <li>IoT dengan Arduino & Sensor</li>
-      </ul>
+      <h2 class="section-title">Tertarik di Bidang</h2>
 
-      <p>
-        Aplikasi ini dibuat untuk memenuhi tugas PWA dan sebagai latihan
-        membangun aplikasi offline-first.
-      </p>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-name">Android Dev</div>
+          <div class="skill-desc">Kotlin, Compose</div>
+        </div>
 
-      <a href="index.html" class="back-btn">Kembali ke Home</a>
+        <div class="skill-item">
+          <div class="skill-name">Laravel</div>
+          <div class="skill-desc">Backend, REST API</div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">PWA</div>
+          <div class="skill-desc">Offline Web</div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">IoT</div>
+          <div class="skill-desc">Arduino, Sensor</div>
+        </div>
+      </div>
+      <button id="notifyBtn">Kirim Notifikasi</button>
+      <div class="footer">© 2024 Muhammad Fauzan Ashshidiq</div>
     </div>
   </body>
+  <script src="app.js"></script>
 </html>

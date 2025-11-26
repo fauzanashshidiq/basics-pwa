@@ -5,6 +5,7 @@ const urlsToCache = [
   "/style.css",
   "/offline.html",
   "/about.html",
+  "/images/profile.png",
 ];
 // Install Service Worker
 self.addEventListener("install", (event) => {
@@ -38,4 +39,9 @@ self.addEventListener("fetch", (event) => {
       );
     })
   );
+});
+
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  event.waitUntil(clients.openWindow("/about.html"));
 });
